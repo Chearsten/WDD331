@@ -3,7 +3,10 @@
 <head>
   <title>Landing Page</title>
   <script>
-
+  		function showCongratulations(theButtonClicked){
+  			document.getElementById("result_display").innerHTML = "Congratulations, you did it!<p>You got the page to update!</p>"
+       			theButtonClicked.innerHTML = "Click Me Again!";
+  		}
   </script>
 
   <style>
@@ -12,6 +15,12 @@
 </head>
 
 <body>
-	<p>Hello</p>
+	<h1>Refresher Practice</h1>
+		<p>Hello</p>
+
+	<button onclick="showCongratulations(this)">Click Me!</button>
+	<section id="result_display"></section>
+</body>
+	
 </body>
 </html>
